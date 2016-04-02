@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% block content %}
+
+  {% for set in mealsets %}
+  <hr>
+  <h2>{{ set.title }}</h2>
+  <img src="{{ set.feature_image }}"/>
+  <p>{{ set.description }}</p>
+  <a href="{{ set.link }}">View</a>
+  {% endfor %}
+
+{% endblock %}
