@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% block content %}
+
+{% for meal in set %}
+  <h2>{{ meal.title }}</h2>
+  <img src="{{ meal.image }}"/>
+  <ul>
+    {% for ingredient in meal.ingredients %}
+    <li>{% ingredient %}</li>
+    {% endfor %}
+  </ul>
+  <ol>
+    {% for step in meal.recipe %}
+    <li>{% step %}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+{% endblock %}
