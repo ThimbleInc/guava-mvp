@@ -3,7 +3,9 @@
 
   <ul>
     {% for ingredient in ingredients %}
-    <li>{% ingredient %}</li>
+    <li>{% ingredient.name %}</li>
+    <li>{% ingredient.quantity %} {% ingredient.unit %}</li>
+    <hr>
     {% endfor %}
   </ul>
 
