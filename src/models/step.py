@@ -9,4 +9,3 @@ class Step(Base):
         self.recipe_id = recipe_id
         self.number = number
         self.text = text
-        

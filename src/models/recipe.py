@@ -14,3 +14,4 @@ class Recipe(Base):
         self.steps = steps
         self.recipe_set_id = recipe_set_id
         self.image = image
+        
