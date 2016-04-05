@@ -1,4 +1,4 @@
-class Ingredient(Base):
+class Ingredient(object):
     __tablename__ = "ingredient"
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
@@ -12,3 +12,5 @@ class Ingredient(Base):
         self.unit = unit
         self.recipe_id = recipe_id
         
+
+ingredients = {}

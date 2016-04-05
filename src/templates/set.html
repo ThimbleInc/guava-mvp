@@ -6,12 +6,12 @@
   <img src="{{ recipe.image }}"/>
   <ul>
     {% for ingredient in recipe.ingredients %}
-    <li>{% ingredient.name %}: {% ingredient.quantity %} {% ingredient.unit %}</li>
+      <li>{{ ingredient.name }}: {{ ingredient.quantity }} {{ ingredient.unit }}</li>
     {% endfor %}
   </ul>
   <ol>
     {% for step in recipe.steps %}
-    <li>{% step.text %}</li>
+      <li>{{ step.text }}</li>
     {% endfor %}
   </ol>
 {% endfor %}
