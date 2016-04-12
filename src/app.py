@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'homepage'
+	return render_template('index.html')
 
 @app.route('/recipe-sets')
 def recipe_sets():
