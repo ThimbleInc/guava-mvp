@@ -4,11 +4,14 @@ class RecipeSet(object):
     # recipes = relationship("Recipe")
     # description = Column(String(300))
     # feature_image = Column(String(50))
+    # link = Column(String(50))
 
-    # def __init__(self, recipes, description, feature_image):
+    # def __init__(self, recipes, description, feature_image, link):
     #     self.recipes = recipes
     #     self.description = description
     #     self.feature_image = feature_image
+    #     self.link = link
+    
    	def __init__(self):
    		self.sets = [
 			{

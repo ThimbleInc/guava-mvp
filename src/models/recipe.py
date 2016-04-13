@@ -14,7 +14,7 @@ class Recipe(object):
     #     self.steps = steps
     #     self.recipe_set_id = recipe_set_id
     #     self.image = image
-    
+
     def __init__(self):
         self.recipes = {
             0:[
@@ -29,7 +29,8 @@ class Recipe(object):
                     ],
                     'steps':[
                         {
-                            'text' : 'testy'
+                            'text' : 'testy',
+                            'number': '1'
                         }
                     ],
                     'image':'link/to/image'
@@ -45,7 +46,8 @@ class Recipe(object):
                     ],
                     'steps':[
                         {
-                            'text' : 'testy'
+                            'text' : 'testy',
+                            'number': '1'
                         }
                     ],
                     'image':'link/to/image'
@@ -61,7 +63,8 @@ class Recipe(object):
                     ],
                     'steps':[
                         {
-                            'text' : 'testy'
+                            'text' : 'testy',
+                            'number': '1'
                         }
                     ],
                     'image':'link/to/image'
