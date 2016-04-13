@@ -12,34 +12,30 @@ class RecipeSet(object):
    	def __init__(self):
    		self.sets = [
 			{
-				'title' : 'recipe set 1',
-				'description' : 'succulent recipe set 1',
+				'title' : 'Hearty Meals',
+				'description' : 'These four dishes provide that warm feeling inside your tummy. The main themes of this recipe set \
+				include slow cooking, meaty and BROCCOLI!',
 				'link' : '/set/id/0',
 				'feature_image' : '/blah.png',
 				'set_id' : 0
 			},
 			{
-				'title' : 'recipe set 2',
-				'description' : 'succulent recipe set 2',
+				'title' : 'Sweet and Savory',
+				'description' : 'This meal set provides the best of two worlds, sweet and savory! Enjoy two scrumptious \
+				chicken meals, and two sweet dishes for your sweet tooth.',
 				'link' : '/set/id/1',
 				'feature_image' : '/blah.png',
 				'set_id' : 1
 
 			},
 			{
-				'title' : 'recipe set 3',
-				'description' : 'succulent recipe set 3',
+				'title' : 'Veggie Delight',
+				'description' : 'Four delicious meals made just for the vegetarian in you. The base ingredients for this set are \
+				bell peppers, eggs, and quinoa.',
 				'link' : '/set/id/2',
 				'feature_image' : '/blah.png',
 				'set_id' : 2
 
-			},
-			{
-				'title' : 'recipe set 4',
-				'description' : 'succulent recipe set 4',
-				'link' : '/set/id/3',
-				'feature_image' : '/blah.png',
-				'set_id' : 3
 			},
 		]
 
