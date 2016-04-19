@@ -1,19 +1,23 @@
-{% extends "base.html" %}
+{% extends "profile.html" %}
 {% block content %}
 
 {% for recipe in set %}
-  <h2>{{ recipe.title }}</h2>
-  <img src="{{ recipe.image }}"/>
-  <ul>
-    {% for ingredient in recipe.ingredients %}
-      <li>{{ ingredient.name }}: {{ ingredient.quantity }} {{ ingredient.unit }}</li>
-    {% endfor %}
-  </ul>
-  <ol>
-    {% for step in recipe.steps %}
-      <li>{{ step.text }}</li>
-    {% endfor %}
-  </ol>
+  <div class='col-sm-12'>'
+    <h2>{{ recipe.title }}</h2>
+    <section id='photos'>
+      <img src="{{ recipe.image }}"/>
+    </section>
+    <ul>
+      {% for ingredient in recipe.ingredients %}
+        <li>{{ ingredient.name }}: {{ ingredient.quantity }} {{ ingredient.unit }}</li>
+      {% endfor %}
+    </ul>
+    <ol>
+      {% for step in recipe.steps %}
+        <li>{{ step.text }}</li>
+      {% endfor %}
+    </ol>
+  </div>
 {% endfor %}
 
 {% endblock %}
