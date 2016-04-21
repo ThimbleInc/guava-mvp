@@ -20,4 +20,8 @@
   </div>
 {% endfor %}
 
+<form method='POST' action='/select-set'>
+  <input type='hidden' name='setID' value='{{set_id}}'>
+  <input type='submit' value='Select'>
+</form>
 {% endblock %}

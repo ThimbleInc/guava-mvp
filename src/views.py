@@ -2,7 +2,7 @@ from flask import render_template, session, request, redirect, url_for
 from models.recipe_set import RecipeSet
 from models.recipe import Recipe
 from models.user_ingredients import UserIngredients
-from src import app
+from src import app, db
 
 @app.route('/')
 def home():
@@ -23,12 +23,25 @@ def recipe_sets():
 @app.route('/set/id/<int:set_id>')
 def set(set_id):
 	recipes = Recipe()
-	return render_template('set.html', set= recipes.recipes[set_id])
+	return render_template('set.html', set=recipes.recipes[set_id], set_id=set_id)
 
-@app.route('/ingredients/<username>')
+@app.route('/select-set', methods=['POST'])
+def add_set():
+	set_id = request.form['setID']
+	ui = UserIngredients(session['name'], set_id)
+	db.session.add(ui)
+	db.session.commit()
+	return redirect(url_for('ingredients', username=session['name']))
+
+@app.route('/ingredients/<string:username>')
 def ingredients(username):
-	doesExist = UserIngredients.query.filter(UserIngredients.name == username).first()
-	if doesExist:
-		return 'Ingredients for ' + username
+	does_exist = UserIngredients.query.filter(UserIngredients.name == username).first()
+
+	if does_exist:
+		set_id = does_exist.recipe_set
+		recipe = Recipe()
+		recipes = recipe.recipes[set_id]
+		return render_template('ingredients.html', recipes=recipes)
+
 	else: 
 		return redirect(url_for('recipe_sets'))
