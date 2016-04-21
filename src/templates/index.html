@@ -1,1 +1,7 @@
 {% extends "base.html" %}
+{%block content%}
+<form method='POST' action='/login'>
+	<input type='text' name='name' value=''/>
+	<input type="submit" value="Submit">
+</form>
+{%endblock%}
