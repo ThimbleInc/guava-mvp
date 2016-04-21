@@ -41,7 +41,14 @@ def ingredients(username):
 		set_id = does_exist.recipe_set
 		recipe = Recipe()
 		recipes = recipe.recipes[set_id]
-		return render_template('ingredients.html', recipes=recipes)
 
+		incomplete_recipes = range(0,4)
+		
+		if does_exist.recipes_completed is not None:
+			recipes_completed = does_exist.recipes_completed.split(',')
+			incomplete_recipes = [x for x in range(0,4) if x not in recipes_completed]
+
+		your_recipes = [recipes[i] for i in incomplete_recipes]
+		return render_template('ingredients.html', recipes=your_recipes)
 	else: 
 		return redirect(url_for('recipe_sets'))
