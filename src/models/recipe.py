@@ -292,22 +292,301 @@ class Recipe(object):
             ],
             1:[
                 {
-                    'title': 'recipe 1',
-                    'ingredients':[],
-                    'steps':[],
-                    'image':'link/to/image'
+                    'title': 'Pecan-crusted Chicken',
+                    'ingredients':[
+                        {
+                            'name':'boneless, skinless chicken breast halves',
+                            'quantity': '4',
+                            'unit':''
+                        },
+                        {
+                            'name':'finely chopped pecans',
+                            'quantity': '1/4',
+                            'unit':'cup'
+                        },
+                        {
+                            'name':'ground black pepper',
+                            'quantity': '1/4',
+                            'unit':'tsp'
+                        },
+                        {
+                            'name':'Country Crock pumpkin spice spread',
+                            'quantity': '3',
+                            'unit':'tbsp'
+                        },
+                        {
+                            'name':'breadcrumbs',
+                            'quantity': '1/2',
+                            'unit':'cup'
+                        }
+                    ],
+                    'steps':[
+                        {
+                            'text' : 'Preheat oven to 400 degrees.',
+                            'number': '1'
+                        },
+                        {
+                            'text' : 'Combine pecans, bread crumbs and pepper in shallow dish; set aside.',
+                            'number': '2'
+                        },
+                        {
+                            'text' : 'Coat chicken with Country Crock® Pumpkin Spice Spread, then pecan mixture. Arrange on ungreased baking sheet.',
+                            'number': '3'
+                        },
+                        {
+                            'text' : 'Bake 20 minutes or until chicken is thoroughly cooked.',
+                            'number': '4'
+                        }
+                    ],
+                    'image':'/images/pecan-crusted-chicken.png'
                 },
                 {
-                    'title': 'recipe 1',
-                    'ingredients':[],
-                    'steps':[],
-                    'image':'link/to/image'
+                    'title': 'Sweet Potato Praline',
+                    'ingredients':[
+                        {
+                            'name':'marshmallow creme',
+                            'quantity': '1/2',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name':'Country Crock pumpkin spice spread',
+                            'quantity': '1/4',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name':'sweet potatoes, peeled, cooked and mashed',
+                            'quantity': '2',
+                            'unit': 'lbs'
+                        },
+                        {
+                            'name':'cholesterol-free egg substitute',
+                            'quantity': '1/4',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name': 'all-purpose flour',
+                            'quantity': '2',
+                            'unit': 'tbsp'
+                        },
+                        {
+                            'name':'finely chopped pecans',
+                            'quantity': '1',
+                            'unit':'tbsp'
+                        },
+                        {
+                            'name':'light brown sugar',
+                            'quantity': '1',
+                            'unit':'tbsp'
+                        }
+                    ],
+                    'steps':[
+                        {
+                            'text' : 'Beat sweet potatoes, Country Crock® Pumpkin Spice Spread, egg substitute and flour in large bowl with electric mixer until fluffy, about 2 minutes.',
+                            'number': '1'
+                        },
+                        {
+                            'text' : 'Add marshmallow creme and beat just until blended.',
+                            'number': '2'
+                        },
+                        {
+                            'text' : 'Spoon into ungreased 1-1/2-quart casserole.',
+                            'number': '3'
+                        },
+                        {
+                            'text' : 'Sprinkle with pecan mixture.',
+                            'number': '4'
+                        },
+                        {
+                            'text' : 'Bake 30 minutes or until bubbling.',
+                            'number': '5'
+                        },
+                        {
+                            'text' : 'Preheat oven to 350°. Combine pecans with brown sugar in small bowl; set aside.',
+                            'number': '6'
+                        }
+                    ],
+                    'image':'/images/sweet_potato_praline.png'
                 },
                 {
-                    'title': 'recipe 1',
-                    'ingredients':[],
-                    'steps':[],
-                    'image':'link/to/image'
+                    'title': 'Lemon Chicken with Sweet Potatoes',
+                    'ingredients':[
+                        {
+                            'name': 'sweet potatoes',
+                            'quantity': '4',
+                            'unit': ''
+                        },
+                        {
+                            'name': 'fresh lemon juice',
+                            'quantity': '1/2',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name': 'olive oil',
+                            'quantity': '1/4',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name': 'garlic',
+                            'quantity': '2',
+                            'unit': 'cloves'
+                        },
+                        {
+                            'name': 'dijon mustard',
+                            'quantity': '1',
+                            'unit': 'tbsp'
+                        },
+                        {
+                            'name': 'dried oregano',
+                            'quantity': '1',
+                            'unit': 'tsp'
+                        },
+                        {
+                            'name': 'turmeric',
+                            'quantity': '1',
+                            'unit': 'tsp'
+                        },
+                        {
+                            'name': 'salt',
+                            'quantity': '1/2',
+                            'unit': 'tsp'
+                        },
+                        {
+                            'name': 'black pepper',
+                            'quantity': '1/2',
+                            'unit': 'tsp'
+                        },
+                        {
+                            'name': 'chicken broth',
+                            'quantity': '1',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name': 'boneless, skinless chicken breasts',
+                            'quantity': '2',
+                            'unit': ''
+                        },
+                        {
+                            'name': 'lemon',
+                            'quantity': '1',
+                            'unit': ''
+                        }
+                    ],
+                    'steps':[
+                        {
+                            'text' : 'Preheat oven to 400 degrees F.',
+                            'number': '1'
+                        },
+                        {
+                            'text' : 'Cut sweet potatoes to desired size. Arrange in a deep baking pan.',
+                            'number': '2'
+                        },
+                        {
+                            'text' : 'Combine lemon juice, olive oil, garlic, mustard, oregano, turmeric, salt, pepper and chicken broth in a small mixing bowl. Whisk to combine.',
+                            'number': '3'
+                        },
+                        {
+                            'text' : 'Place chicken breasts over sweet potatoes and pour lemon mixture on top.',
+                            'number': '4'
+                        },
+                        {
+                            'text' : 'Bake 55-60 minutes. If desired, after 30 minutes, arrange lemon slices over chicken and continue baking.',
+                            'number': '5'
+                        }
+                    ],
+                    'image':'/images/chicken_sweet_potatoes.png'
+                },
+                {
+                    'title': 'Lemon Brownies',
+                    'ingredients':[
+                        {
+                            'name': 'all-purpose flour',
+                            'quantity': '1/2',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name': 'whole-wheat pastry flour',
+                            'quantity': '1/4',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name': 'butter',
+                            'quantity': '1',
+                            'unit': 'stick'
+                        },
+                        {
+                            'name': 'extra large eggs',
+                            'quantity': '2',
+                            'unit': ''
+                        },
+                        {
+                            'name': 'fresh lemon juice',
+                            'quantity': '2',
+                            'unit': 'tbsps'
+                        },
+                        {
+                            'name': 'lemon zest',
+                            'quantity': '1 1/2',
+                            'unit': 'tbsps'
+                        },
+                        {
+                            'name': 'sea salt',
+                            'quantity': '1/4',
+                            'unit': 'tsp'
+                        },
+                        {
+                            'name': 'baking soda',
+                            'quantity': '1/4',
+                            'unit': 'tsp'
+                        },
+                        {
+                            'name': 'baking powder',
+                            'quantity': '1/4',
+                            'unit': 'tsp'
+                        },
+                        {
+                            'name': 'vanilla extract',
+                            'quantity': '1/2',
+                            'unit': 'tsp'
+                        },
+                        {
+                            'name': 'powdered sugar',
+                            'quantity': '1/2',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name': 'fresh lemon juice',
+                            'quantity': '2',
+                            'unit': 'tbsps'
+                        },
+                        {
+                            'name': 'cold water',
+                            'quantity': '1/2',
+                            'unit': 'tsp'
+                        }
+                    ],
+                    'steps':[
+                        {
+                            'text' : 'Preheat oven to 340 degrees. Mist a non-stick 8 or 9-inch square pan with cooking spray. Set aside.',
+                            'number': '1'
+                        },
+                        {
+                            'text' : 'In a large mixing bowl, beat with a handheld mixer or stand mixer the softened butter with the sugar until fluffy. Add the eggs one at a time until well-incorporated. Add the lemon juice and zest and mix until combined.',
+                            'number': '2'
+                        },
+                        {
+                            'text' : 'In a separate bowl, whisk together the flour, salt, baking soda and baking powder. Add the flour mixture into the wet ingredients and beat at medium speed for about 1 to 2 minutes until nice and creamy.',
+                            'number': '3'
+                        },
+                        {
+                            'text' : 'Pour batter into prepared pan and bake for about 20-24 minutes. Try not to over-bake. The edges will turn lightly golden brown. A toothpick should have moist crumbs. Let cool on a wire rack for at least 20 minutes.',
+                            'number': '4'
+                        },
+                        {
+                            'text' : 'While cooling, prepare the glaze and then spread over the brownies and sprinkle on the zest. Cut into 16 brownies and enjoy!',
+                            'number': '5'
+                        }
+                    ],
+                    'image':'/images/lemon_brownies.png'
                 }
             ],
             2:[
