@@ -1,5 +1,5 @@
 {% extends "profile.html" %}
-{% block content %}
+{% block user_content %}
 
 {% for recipe in set %}
   <div class='col-sm-12'>'
@@ -20,4 +20,8 @@
   </div>
 {% endfor %}
 
+<form method='POST' action='/select-set'>
+  <input type='hidden' name='setID' value='{{set_id}}'>
+  <input type='submit' value='Select'>
+</form>
 {% endblock %}

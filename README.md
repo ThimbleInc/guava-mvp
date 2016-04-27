@@ -4,7 +4,7 @@
 
 2) pip install -r requirements.txt
 
-3) start app by running python src/app.py
+3) start app by running python run.py
 
 Add the following to your `~/.gitconfig`:
 

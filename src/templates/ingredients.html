@@ -1,5 +1,5 @@
 {% extends "profile.html" %}
-{% block content %}
+{% block user_content %}
 
   <div class='col-sm-12'>
     <h2>Ingredients</h2>
@@ -7,10 +7,13 @@
   <hr>
   <div class='col-sm-12'>
     <ul>
-      {% for ingredient in ingredients %}
-      <li><strong>{% ingredient.name %}</strong></li>
-      <li>{% ingredient.quantity %} {% ingredient.unit %}</li>
-      <hr>
+      {% for recipe in recipes %}
+        <h3>{{ recipe.title }}</h3>
+        {% for ingredient in recipe.ingredients %}
+          <li><strong>{{ ingredient.name}}</strong></li>
+          <li>{{ ingredient.quantity }} {{ ingredient.unit }}</li>
+          <hr>
+        {% endfor %}
       {% endfor %}
     </ul>
   </div>
