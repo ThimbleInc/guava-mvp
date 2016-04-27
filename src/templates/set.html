@@ -1,11 +1,12 @@
-{% extends "profile.html" %}
-{% block user_content %}
+{% extends "base.html" %}
+
+{% block content %}
 
 {% for recipe in set %}
-  <div class='col-sm-12'>'
+  <div class='col-sm-12'>
     <h2>{{ recipe.title }}</h2>
     <section id='photos'>
-      <img src="{{ recipe.image }}"/>
+      <img src="{{ url_for('static', filename = recipe.image) }}" width='75%'/>
     </section>
     <ul>
       {% for ingredient in recipe.ingredients %}
@@ -22,6 +23,6 @@
 
 <form method='POST' action='/select-set'>
   <input type='hidden' name='setID' value='{{set_id}}'>
-  <input type='submit' value='Select'>
+  <input type='submit' value='Choose this Set'>
 </form>
 {% endblock %}

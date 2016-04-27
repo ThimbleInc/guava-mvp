@@ -98,7 +98,7 @@ class Recipe(object):
                             'number': '6'
                         },
                     ],
-                    'image':'/images/broccoli.png'
+                    'image':'images/broccoli.png'
                 },
                 {
                     'title': 'Roasted Balsamic Broccoli',
@@ -161,7 +161,7 @@ class Recipe(object):
                             'number': '5'
                         },
                     ],
-                    'image':'/images/balsamic_broccoli.png'
+                    'image':'images/balsamic_broccoli.png'
                 },
                 {
                     'title': 'Clove Garlic Soup',
@@ -216,7 +216,7 @@ class Recipe(object):
                             'number': '3'
                         }
                     ],
-                    'image':'/images/clove_garlic_soup.png'
+                    'image':'images/clove_garlic_soup.png'
                 },
                 {
                     'title': 'Crockpot BBQ Beef Sandwich',
@@ -287,7 +287,7 @@ class Recipe(object):
                             'number': '7'
                         },
                     ],
-                    'image':'/images/crockpot_bbq_beef.png'
+                    'image':'images/crockpot_bbq_beef.png'
                 }
             ],
             1:[
@@ -330,7 +330,7 @@ class Recipe(object):
                             'number': '2'
                         },
                         {
-                            'text' : 'Coat chicken with Country Crock® Pumpkin Spice Spread, then pecan mixture. Arrange on ungreased baking sheet.',
+                            'text' : 'Coat chicken with Country Crock Pumpkin Spice Spread, then pecan mixture. Arrange on ungreased baking sheet.',
                             'number': '3'
                         },
                         {
@@ -338,7 +338,7 @@ class Recipe(object):
                             'number': '4'
                         }
                     ],
-                    'image':'/images/pecan-crusted-chicken.png'
+                    'image':'images/pecan-crusted-chicken.png'
                 },
                 {
                     'title': 'Sweet Potato Praline',
@@ -381,7 +381,7 @@ class Recipe(object):
                     ],
                     'steps':[
                         {
-                            'text' : 'Beat sweet potatoes, Country Crock® Pumpkin Spice Spread, egg substitute and flour in large bowl with electric mixer until fluffy, about 2 minutes.',
+                            'text' : 'Beat sweet potatoes, Country Crock Pumpkin Spice Spread, egg substitute and flour in large bowl with electric mixer until fluffy, about 2 minutes.',
                             'number': '1'
                         },
                         {
@@ -401,11 +401,11 @@ class Recipe(object):
                             'number': '5'
                         },
                         {
-                            'text' : 'Preheat oven to 350°. Combine pecans with brown sugar in small bowl; set aside.',
+                            'text' : 'Preheat oven to 350 degrees. Combine pecans with brown sugar in small bowl; set aside.',
                             'number': '6'
                         }
                     ],
-                    'image':'/images/sweet_potato_praline.png'
+                    'image':'images/sweet_potato_praline.png'
                 },
                 {
                     'title': 'Lemon Chicken with Sweet Potatoes',
@@ -493,7 +493,7 @@ class Recipe(object):
                             'number': '5'
                         }
                     ],
-                    'image':'/images/chicken_sweet_potatoes.png'
+                    'image':'images/chicken_sweet_potatoes.png'
                 },
                 {
                     'title': 'Lemon Brownies',
@@ -586,46 +586,95 @@ class Recipe(object):
                             'number': '5'
                         }
                     ],
-                    'image':'/images/lemon_brownies.png'
+                    'image':'images/lemon_brownies.png'
                 }
             ],
             2:[
                 {
-                    'title': 'recipe 1',
+                    'title': 'Quinoa-Stuff Bell Peppers',
                     'ingredients':[],
                     'steps':[],
                     'image':'link/to/image'
                 },
                 {
-                    'title': 'recipe 1',
+                    'title': 'Bell Pepper Eggs',
                     'ingredients':[],
                     'steps':[],
                     'image':'link/to/image'
                 },
                 {
-                    'title': 'recipe 1',
-                    'ingredients':[],
-                    'steps':[],
-                    'image':'link/to/image'
-                }
-            ],
-            3:[
-                {
-                    'title': 'recipe 1',
+                    'title': 'Quinoa Stuffing',
                     'ingredients':[],
                     'steps':[],
                     'image':'link/to/image'
                 },
                 {
-                    'title': 'recipe 1',
-                    'ingredients':[],
-                    'steps':[],
-                    'image':'link/to/image'
-                },
-                {
-                    'title': 'recipe 1',
-                    'ingredients':[],
-                    'steps':[],
+                    'title': 'Avocado Egg Chilaquiles',
+                    'ingredients':[
+                        {
+                            'name': 'salsa',
+                            'quantity': '1/2',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name': '2 large eggs',
+                            'quantity': '2',
+                            'unit': ''
+                        },
+                        {
+                            'name': 'cilantro (chopped)',
+                            'quantity': '1/4',
+                            'unit': 'N/A'
+                        },
+                        {
+                            'name': 'Lime',
+                            'quantity': '1',
+                            'unit': 'N/A'
+                        },
+                        {
+                            'name': 'White corn tortillas',
+                            'quantity': '3',
+                            'unit': 'N/A'
+                        },
+                        {
+                            'name': 'avocado (diced)',
+                            'quantity': '1/2',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name': 'purple onion (diced)',
+                            'quantity': '2',
+                            'unit': 'tbsps'
+                        },
+                        {
+                            'name': 'fresh tomatoes (chopped)',
+                            'quantity': '2',
+                            'unit': 'tbsps'
+                        }
+                    ],
+
+                    'steps':[
+                        {
+                            'text':'Pre-heat oven to 350 degrees. Spread tortilla stirps on baking sheet and bake 10 minutes or until just starting to brown. Cool strips for 10 minutes - they will crisp as they cool.',
+                            'number': '1'
+                        },
+                        {
+                            'text' : 'Divide tortilla strips between two individual baking dishes. Top with salsa and place in oven 10 minutes.',
+                            'number': '2'
+                        },
+                        {
+                            'text' : 'Toss together avocado, onion tomatoes, cilantro and lime. Set aside.',
+                            'number': '3'
+                        },
+                        {
+                            'text' : 'Meanwhile, coat a small skillet with cooking spray. Heat over mediume heat and break eggs into skillet. Cook until desired doneness.',
+                            'number': '4'
+                        },
+                        {
+                            'text' : 'Transfer eggs to baking dishes and sprinkle with avocado mixture. Serve with lime wedges.',
+                            'number': '5'
+                        }
+                    ],
                     'image':'link/to/image'
                 }
             ]
