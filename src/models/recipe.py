@@ -600,7 +600,7 @@ class Recipe(object):
                         },
                         {
                             'name':'quinoa',
-                            'quanty':'1/2'
+                            'quanty':'1/2',
                             'unit':'cup'
                         },
                         {
@@ -684,7 +684,7 @@ class Recipe(object):
                         },
                         {
                             'name':'large eggs',
-                            'quanty':'4'
+                            'quanty':'4',
                             'unit':'N/A'
                         },
                         {
