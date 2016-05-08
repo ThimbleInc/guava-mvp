@@ -592,20 +592,218 @@ class Recipe(object):
             2:[
                 {
                     'title': 'Quinoa-Stuff Bell Peppers',
-                    'ingredients':[],
-                    'steps':[],
+                    'ingredients':[
+                        {
+                            'name': 'bell pepper (halfed length wise, ribs removed)',
+                            'quanity' : '4',
+                            'unit': 'N/A'
+                        },
+                        {
+                            'name':'quinoa',
+                            'quanty':'1/2'
+                            'unit':'cup'
+                        },
+                        {
+                            'name':'turkey',
+                            'quanity':'1/2',
+                            'unit': 'lb'
+                        },
+                        {
+                            'name':'onions',
+                            'quanity':'1',
+                            'unit': 'N/A'
+                        },
+                        {
+                            'name':'roasted tomatoes',
+                            'quanity':'14',
+                            'unit': 'ozs'
+                        },
+                        {
+                            'name':'green chilies (diced)',
+                            'quanity':'7',
+                            'unit': 'ozs'
+                        },
+                        {
+                            'name':'black beans (drained and rinsed)',
+                            'quanity':'14',
+                            'unit': 'ozs'
+                        },
+                        {
+                            'name':'taco seasoning',
+                            'quanity':'1',
+                            'unit': 'tbsp'
+                        },
+                        {
+                            'name':'cumin',
+                            'quanity':'1/2',
+                            'unit': 'tbsp'
+                        },
+                        {
+                            'name':'olive oil',
+                            'quanity':'1/2',
+                            'unit': 'tbsp'
+                        },
+                        {
+                            'name':'shredded cheese (mozzarella)',
+                            'quanity':'1/2',
+                            'unit': 'cup'
+                        },
+                        {
+                            'name':'water',
+                            'quanity':'3/4',
+                            'unit': 'cup'
+                        }
+                    ],
+                    'steps':[
+                        {
+                            'text':'Heat olive oil in a large saucepan. Add onion and cook until translucent ( about 3 minutes). Add in meat and cook until browned. Drain any excess grease',
+                            'number':'1'
+                        },
+                        {
+                            'text':'Add in black beans, tomatoes, green chilies, water, quinoa, cumin, taco seasoning, salt and pepper if desired. Cover and bring to a boil. Reduce heat to medium/low and simmer for 15 minutes or until quinoa is done.',
+                            'number':'2'
+                        },
+                        {
+                            'text':'Heat oven to 375. Place peppers in 13 x 9 baking dish. Spoon in filling and top with grated cheese. Cover pan with foil and bake for 40 minutes.',
+                            'number':'3'
+                        },
+                        {
+                            'text':'Remove from oven and serve with sour cream or salsa (optional). Enjoy!',
+                            'number':'4'
+                        }
+                    ],
                     'image':'link/to/image'
                 },
                 {
                     'title': 'Bell Pepper Eggs',
-                    'ingredients':[],
-                    'steps':[],
+                    'ingredients':[
+                        {
+                            'name': 'bell pepper',
+                            'quanity' : '1',
+                            'unit': 'N/A'
+                        },
+                        {
+                            'name':'large eggs',
+                            'quanty':'4'
+                            'unit':'N/A'
+                        },
+                        {
+                            'name':'sea salt',
+                            'quanity':'N/A',
+                            'unit': 'N/a'
+                        },
+                        {
+                            'name':'ground black pepper',
+                            'quanity':'N/A',
+                            'unit': 'N/A'
+                        },
+                        {
+                            'name':'olive oil',
+                            'quanity':'1',
+                            'unit': 'tbsp'
+                        }
+                    ],
+                    'steps':[
+                        {
+                            'text':'Take out a large nonstick skillet and heat the oil over medium-high heat',
+                            'number': '1'
+                        },
+                        {
+                            'text' : 'Slice the pepper to create 1/2-inch rings. Remember to discard of the seeds and centers of the pepper',
+                            'number': '2'
+                        },
+                        {
+                            'text' : ' Transfer the pepper rings into the skillet and saute for one minute.',
+                            'number': '3'
+                        },
+                        {
+                            'text' : 'Crack one egg into the center of each ring. It is important to pour the egg slowly. Sprinkle salt and pepper over the eggs',
+                            'number': '4'
+                        },
+                        {
+                            'text' : 'Saute for three minutes and then slowly flip each pepper-egg ring over. Cook for one additional minute and serve',
+                            'number': '5'
+                        }
+                    ],
                     'image':'link/to/image'
                 },
                 {
                     'title': 'Quinoa Stuffing',
-                    'ingredients':[],
-                    'steps':[],
+                    'steps':[
+                        {
+                            'text':'Boil 4 cups of water; season with bay leaves and salt',
+                            'number': '1'
+                        },
+                        {
+                            'text' : 'Add quinoa and return to a boil. Reduce heat, cover and simmer about 20 minutes, until quinoa absorbs water. Remove from heat; remove bay leaves and let cool.',
+                            'number': '2'
+                        },
+                        {
+                            'text' : 'Meanwhile, heat 3 tbsp oil in a frying pan. Sauté zucchini and squash — season with salt and pepper — until slightly browned',
+                            'number': '3'
+                        },
+                        {
+                            'text' : 'Combine vegetables and quinoa. Drizzle on remaining 1 tbsp oil. Stir in onions, apricots, cranberries, parsley, and mint. Grate in lemon peel and squeeze on lemon juice to taste. Season with salt and pepper.',
+                            'number': '4'
+                        }
+                    ],
+                    'ingredients':[
+                        {
+                            'name':'bay leaves',
+                            'quantity':'3',
+                            'unit':'N/A'
+                        },
+                        {
+                            'name':'quinoa',
+                            'quantity':'2',
+                            'unit':'cup'
+                        },
+                        {
+                            'name':'olive oil',
+                            'quantity':'1/4',
+                            'unit':'cup'
+                        },
+                        {
+                            'name':'zucchini (small, cut into 1-inch cubes)',
+                            'quantity':'2',
+                            'unit':'N/A'
+                        },
+                        {
+                            'name':'butternut squash (peeled and diced)',
+                            'quantity':'1',
+                            'unit':'N/A'
+                        },
+                        {
+                            'name':'green onions (chopped)',
+                            'quantity':'1',
+                            'unit':'bunches'
+                        },
+                        {
+                            'name':'dried apricot (diced)',
+                            'quantity':'1',
+                            'unit':'cup'
+                        },
+                        {
+                            'name':'dried cranberries',
+                            'quantity':'1',
+                            'unit':'cup'
+                        },
+                        {
+                            'name':'fresh parsely (chopped)',
+                            'quantity':'1',
+                            'unit':'cup'
+                        },
+                        {
+                            'name':'fresh mint (chopped)',
+                            'quantity':'1',
+                            'unit':'cup'
+                        },
+                        {
+                            'name':'lemon',
+                            'quantity':'1',
+                            'unit':'N/A'
+                        }
+                    ],
                     'image':'link/to/image'
                 },
                 {
