@@ -739,7 +739,7 @@ class Recipe(object):
                             'number': '2'
                         },
                         {
-                            'text' : 'Meanwhile, heat 3 tbsp oil in a frying pan. Sauté zucchini and squash — season with salt and pepper — until slightly browned',
+                            'text' : 'Meanwhile, heat 3 tbsp oil in a frying pan. Saute zucchini and squash, season with salt and pepper, until slightly browned',
                             'number': '3'
                         },
                         {

@@ -46,9 +46,24 @@ def ingredients(username):
 		
 		if does_exist.recipes_completed is not None:
 			recipes_completed = does_exist.recipes_completed.split(',')
-			incomplete_recipes = [x for x in range(0,4) if x not in recipes_completed]
+			print recipes_completed
+			incomplete_recipes = [x for x in range(0,4) if str(x) not in recipes_completed]
 
-		your_recipes = [recipes[i] for i in incomplete_recipes]
+		your_recipes = [{"id":i,"recipe":recipes[i]} for i in incomplete_recipes]
+		
 		return render_template('ingredients.html', recipes=your_recipes)
-	else: 
+	else:
 		return redirect(url_for('recipe_sets'))
+
+@app.route('/complete-recipe', methods=['POST'])
+def complete_recipe():
+	obj = UserIngredients.query.filter(UserIngredients.name == session['name']).first()
+	if obj.recipes_completed is not None:
+		completed_recipes = obj.recipes_completed.split(',')
+		completed_recipes.append(request.form['recipe_id'])
+	else :
+		completed_recipes = []
+	obj.recipes_completed = ','.join(completed_recipes)
+	db.session.commit()	
+
+	return redirect(url_for('ingredients', username=session['name']))
